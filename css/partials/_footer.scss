@@ -1,0 +1,17 @@
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: $color5;
+  img {
+    height: 100px;
+    transition: all 400ms ease;
+  }
+  img:hover {
+    transform: translateY(-3%);
+  }
+}

@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::-moz-selection {
+  background-color: #90e0ef;
+  color: #03045e;
+}
+*::selection {
+  background-color: #90e0ef;
+  color: #03045e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #caf0f8;
+}
+
+.logos__i {
+  font-size: 10rem !important;
+}
+
+.focus-in-expand-fwd {
+  -webkit-animation: focus-in-expand-fwd 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: focus-in-expand-fwd 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes focus-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-800px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-800px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  background-color: #03045e;
+  display: flex;
+  justify-content: center;
+}
+header a:hover {
+  border-bottom: solid #00b4d8;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 5rem;
+}
+.hero .hero__titulo h1 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+.hero .hero__titulo h1 span {
+  color: #03045e;
+}
+.hero .hero__titulo .hero__boton {
+  background-color: #0077b6;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  border: 3px solid #03045e;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.hero .hero__titulo .hero__boton:hover {
+  background-color: #03045e;
+  transition: 1s;
+}
+
+#proyectos .proyectos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+#proyectos .proyectos .proyectos__titulo h2 {
+  display: flex;
+  font-size: 4rem;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+  font-weight: 500;
+}
+#proyectos .proyectos .proyectos__titulo p {
+  padding-bottom: 1rem;
+}
+#proyectos .proyectos .proyectos__img {
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  gap: 20px;
+}
+#proyectos .proyectos .proyectos__img h6 {
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+#proyectos .proyectos .proyectos__img img {
+  padding: 5px;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+  height: 400px;
+  background-color: #90e0ef;
+}
+#proyectos .proyectos .proyectos__img img:hover {
+  transform: scale(1.1);
+}
+
+#aboutme {
+  height: 50vh;
+}
+#aboutme .aboutme__titulo {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+#aboutme .aboutme__titulo h3 {
+  font-size: 4rem;
+}
+#aboutme .aboutme__texto {
+  padding-left: 25%;
+  padding-right: 25%;
+  font-size: 25px;
+  text-align: center;
+}
+
+#conocimientos {
+  height: 80vh;
+}
+#conocimientos .conocimientos__titulo {
+  display: flex;
+  justify-content: center;
+}
+#conocimientos .conocimientos__titulo h4 {
+  font-size: 4rem;
+}
+#conocimientos .logos {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  padding-top: 2rem;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+#conocimientos .logos .logos__Knowledge {
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 1rem;
+}
+#conocimientos .logos .logos__Knowledge .Knowledge__titulo {
+  padding-bottom: 1rem;
+}
+#conocimientos .logos .logos__Knowledge .Knowledge__titulo h6 {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  font-size: 2rem;
+}
+#conocimientos .logos .logos__Knowledge .Knowledge__titulo h6 span {
+  color: green;
+}
+#conocimientos .logos .logos__Knowledge .logos__icons {
+  display: grid;
+  justify-content: center;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+#conocimientos .logos .logos__devtools {
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 1rem;
+}
+#conocimientos .logos .logos__devtools .devtools__titulo {
+  padding-bottom: 1rem;
+}
+#conocimientos .logos .logos__devtools .devtools__titulo h6 {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  font-size: 2rem;
+}
+#conocimientos .logos .logos__devtools .devtools__titulo h6 span {
+  color: green;
+}
+#conocimientos .logos .logos__devtools .logos__icons {
+  display: grid;
+  justify-content: center;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.formulario {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #caf0f8;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  flex-direction: column;
+}
+.formulario .form__ {
+  width: 450px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 7px;
+}
+.formulario .form__ .formulario__contacto, .formulario .form__ .div__text {
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+.formulario .form__ .div__text {
+  font-size: 20px;
+}
+.formulario .form__ input,
+.formulario .form__ textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+}
+.formulario .form__ textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+.formulario .form__ #boton {
+  background-color: #0077b6;
+  border: none;
+  color: white;
+  font-weight: 500;
+  padding: 20px;
+}
+.formulario .form__ #boton:hover {
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #03045e;
+}
+footer img {
+  height: 100px;
+  transition: all 400ms ease;
+}
+footer img:hover {
+  transform: translateY(-3%);
+}/*# sourceMappingURL=estilo.css.map */

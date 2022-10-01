@@ -1,0 +1,49 @@
+#proyectos {
+  .proyectos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+
+    .proyectos__titulo {
+      h2 {
+        display: flex;
+        font-size: 4rem;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 1rem;
+        font-weight: 500;
+      }
+
+      p {
+        padding-bottom: 1rem;
+      }
+    }
+
+    .proyectos__img {
+      display: flex;
+      flex-direction: row;
+      border-radius: 10px;
+      gap: 20px;
+
+      h6 {
+        display: flex;
+        font-size: 2rem;
+        justify-content: center;
+        padding-bottom: 1rem;
+      }
+
+      img {
+        padding: 5px;
+        border-radius: 10px;
+        transition: transform 0.2s ease;
+        height: 400px;
+        background-color: $color2;
+      }
+
+      img:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

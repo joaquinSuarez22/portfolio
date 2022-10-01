@@ -1,0 +1,75 @@
+#conocimientos {
+  height: 80vh;
+
+  .conocimientos__titulo {
+    display: flex;
+    justify-content: center;
+    h4 {
+      font-size: 4rem;
+    }
+  }
+
+  .logos {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    padding-top: 2rem;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    .logos__Knowledge {
+      width: 50%;
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      padding: 1rem;
+
+      .Knowledge__titulo {
+        padding-bottom: 1rem;
+        h6 {
+          span {
+            color: green;
+          }
+          display: flex;
+          justify-content: center;
+          padding-top: 1rem;
+          font-size: 2rem;
+        }
+      }
+      .logos__icons {
+        display: grid;
+        justify-content: center;
+        gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+
+      }
+    }
+
+    .logos__devtools {
+      width: 50%;
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      padding: 1rem;
+
+      .devtools__titulo {
+        padding-bottom: 1rem;
+        h6 {
+          span {
+            color: green;
+          }
+          display: flex;
+          justify-content: center;
+          padding-top: 1rem;
+          font-size: 2rem;
+        }
+      }
+
+      .logos__icons {
+        display: grid;
+        justify-content: center;
+        gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+
+      }
+    }
+  }
+}

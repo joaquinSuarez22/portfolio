@@ -1,0 +1,19 @@
+#aboutme {
+  height: 50vh;
+
+  .aboutme__titulo {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+    h3 {
+      font-size: 4rem;
+    }
+  }
+
+  .aboutme__texto {
+    padding-left: 25%;
+    padding-right: 25%;
+    font-size: 25px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,38 @@
+.hero {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 5rem;
+
+  .hero__titulo {
+    h1 {
+      font-size: 5rem;
+      font-weight: bold;
+
+      span {
+        color: $color5;
+      }
+    }
+
+    .hero__boton {
+      background-color: $color4;
+      color: white;
+      padding: 10px;
+      border-radius: 20px;
+      border: 3px solid $color5;
+      letter-spacing: 1px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .hero__boton:hover {
+      background-color: $color5;
+      transition: 1s;
+    }
+  }
+}
+
+
+
