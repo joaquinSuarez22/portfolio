@@ -34,5 +34,33 @@
   }
 }
 
+@media screen and (max-width: 1500px) {
+  .hero {
+    flex-direction: column;
+    margin-top: 5rem;
+  }
 
+  .proyectos__titulo {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .hero {
+    .hero__titulo {
+      h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        padding-bottom: 1rem;
+      }
+    }
+  }
+
+  .hero__img {
+    img {
+      height: 300px;
+    }
+  }
+}
 

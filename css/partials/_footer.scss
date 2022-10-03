@@ -11,6 +11,12 @@ footer {
     height: 100px;
     transition: all 400ms ease;
   }
+
+  @media screen and (max-width: 360px) {
+   img{
+    height: 70px;
+   }
+  }
   img:hover {
     transform: translateY(-3%);
   }

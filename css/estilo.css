@@ -104,6 +104,26 @@ header a:hover {
   transition: 1s;
 }
 
+@media screen and (max-width: 1500px) {
+  .hero {
+    flex-direction: column;
+    margin-top: 5rem;
+  }
+  .proyectos__titulo {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .hero .hero__titulo h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+  }
+  .hero__img img {
+    height: 300px;
+  }
+}
 #proyectos .proyectos {
   display: flex;
   align-items: center;
@@ -116,22 +136,39 @@ header a:hover {
   align-items: center;
   justify-content: center;
   padding-bottom: 1rem;
+  padding-top: 1rem;
   font-weight: 500;
+}
+@media screen and (max-width: 360px) {
+  #proyectos .proyectos .proyectos__titulo h2 {
+    font-size: 3rem;
+  }
 }
 #proyectos .proyectos .proyectos__titulo p {
   padding-bottom: 1rem;
 }
 #proyectos .proyectos .proyectos__img {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   border-radius: 10px;
   gap: 20px;
+}
+@media screen and (max-width: 1500px) {
+  #proyectos .proyectos .proyectos__img {
+    display: block;
+  }
 }
 #proyectos .proyectos .proyectos__img h6 {
   display: flex;
   font-size: 2rem;
   justify-content: center;
+  padding-top: 1rem;
   padding-bottom: 1rem;
+}
+@media screen and (max-width: 360px) {
+  #proyectos .proyectos .proyectos__img h6 {
+    font-size: 1.2rem;
+  }
 }
 #proyectos .proyectos .proyectos__img img {
   padding: 5px;
@@ -140,12 +177,18 @@ header a:hover {
   height: 400px;
   background-color: #90e0ef;
 }
+@media screen and (max-width: 360px) {
+  #proyectos .proyectos .proyectos__img img {
+    height: 200px;
+  }
+}
 #proyectos .proyectos .proyectos__img img:hover {
   transform: scale(1.1);
 }
 
 #aboutme {
-  height: 50vh;
+  margin-top: 20rem;
+  margin-bottom: 15rem;
 }
 #aboutme .aboutme__titulo {
   display: flex;
@@ -162,6 +205,18 @@ header a:hover {
   text-align: center;
 }
 
+@media screen and (max-width: 360px) {
+  #aboutme {
+    margin-top: 14rem;
+    margin-bottom: 5rem;
+  }
+  #aboutme .aboutme__titulo {
+    padding-bottom: 1rem;
+  }
+  #aboutme .aboutme__titulo h3 {
+    font-size: 2rem;
+  }
+}
 #conocimientos {
   height: 80vh;
 }
@@ -172,6 +227,11 @@ header a:hover {
 #conocimientos .conocimientos__titulo h4 {
   font-size: 4rem;
 }
+@media screen and (max-width: 360px) {
+  #conocimientos .conocimientos__titulo h4 {
+    font-size: 2rem;
+  }
+}
 #conocimientos .logos {
   display: flex;
   flex-direction: row;
@@ -179,6 +239,13 @@ header a:hover {
   padding-top: 2rem;
   padding-left: 5%;
   padding-right: 5%;
+}
+@media screen and (max-width: 1500px) {
+  #conocimientos .logos {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 #conocimientos .logos .logos__Knowledge {
   width: 50%;
@@ -204,6 +271,21 @@ header a:hover {
   gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
 }
+@media screen and (max-width: 360px) {
+  #conocimientos .logos .logos__Knowledge .Knowledge__titulo h6 {
+    display: block;
+    font-size: 1.2rem;
+  }
+  #conocimientos .logos .logos__Knowledge .logos__icons {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 360px) {
+  #conocimientos .logos .logos__Knowledge {
+    width: 20rem;
+  }
+}
 #conocimientos .logos .logos__devtools {
   width: 50%;
   background-color: rgba(0, 0, 0, 0.2);
@@ -228,6 +310,21 @@ header a:hover {
   gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
 }
+@media screen and (max-width: 360px) {
+  #conocimientos .logos .logos__devtools .devtools__titulo h6 {
+    display: block;
+    font-size: 1.2rem;
+  }
+  #conocimientos .logos .logos__devtools .logos__icons {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 360px) {
+  #conocimientos .logos .logos__devtools {
+    width: 20rem;
+  }
+}
 
 .formulario {
   height: 100vh;
@@ -235,9 +332,20 @@ header a:hover {
   justify-content: center;
   align-items: center;
   background-color: #caf0f8;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 30rem;
+  padding-bottom: 35rem;
   flex-direction: column;
+}
+@media screen and (max-width: 1500px) {
+  .formulario {
+    padding-top: 50rem;
+    padding-bottom: 30rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .formulario {
+    padding-top: 105rem;
+  }
 }
 .formulario .form__ {
   width: 450px;
@@ -245,6 +353,11 @@ header a:hover {
   padding: 10px 20px;
   box-sizing: border-box;
   border-radius: 7px;
+}
+@media screen and (max-width: 360px) {
+  .formulario .form__ {
+    width: 340px;
+  }
 }
 .formulario .form__ .formulario__contacto, .formulario .form__ .div__text {
   color: white;
@@ -292,6 +405,11 @@ footer {
 footer img {
   height: 100px;
   transition: all 400ms ease;
+}
+@media screen and (max-width: 360px) {
+  footer img {
+    height: 70px;
+  }
 }
 footer img:hover {
   transform: translateY(-3%);

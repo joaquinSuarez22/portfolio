@@ -12,33 +12,53 @@
         align-items: center;
         justify-content: center;
         padding-bottom: 1rem;
+        padding-top: 1rem;
         font-weight: 500;
       }
-
+      @media screen and (max-width: 360px) {
+        h2 {
+          font-size: 3rem;
+        }
+      }
       p {
         padding-bottom: 1rem;
       }
     }
 
     .proyectos__img {
-      display: flex;
-      flex-direction: row;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
       border-radius: 10px;
       gap: 20px;
+
+      @media screen and (max-width: 1500px) {
+        display: block;
+      }
 
       h6 {
         display: flex;
         font-size: 2rem;
         justify-content: center;
+        padding-top: 1rem;
         padding-bottom: 1rem;
       }
-
+      @media screen and (max-width: 360px) {
+        h6 {
+          font-size: 1.2rem;
+        }
+      }
       img {
         padding: 5px;
         border-radius: 10px;
         transition: transform 0.2s ease;
         height: 400px;
         background-color: $color2;
+      }
+
+      @media screen and (max-width: 360px) {
+        img {
+          height: 200px;
+        }
       }
 
       img:hover {

@@ -4,9 +4,18 @@
   justify-content: center;
   align-items: center;
   background-color: $color1;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 30rem;
+  padding-bottom: 35rem;
   flex-direction: column;
+
+  @media screen and (max-width: 1500px) {
+    padding-top: 50rem;
+    padding-bottom: 30rem;
+  }
+
+  @media screen and (max-width: 360px) {
+    padding-top: 105rem;
+  }
 
   .form__ {
     width: 450px;
@@ -14,6 +23,10 @@
     padding: 10px 20px;
     box-sizing: border-box;
     border-radius: 7px;
+
+    @media screen and (max-width: 360px) {
+      width: 340px;
+    }
 
     .formulario__contacto {
       color: white;
