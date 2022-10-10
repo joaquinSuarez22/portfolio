@@ -205,12 +205,12 @@ header a:hover {
   text-align: center;
 }
 
-@media screen and (max-width: 1500px) {
+@media only screen and (max-width: 1500px) {
   #aboutme {
     margin-top: 70rem;
   }
 }
-@media screen and (max-width: 360px) {
+@media only screen and (max-width: 360px) {
   #aboutme {
     margin-top: 14rem;
     margin-bottom: 5rem;
