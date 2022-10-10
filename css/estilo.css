@@ -124,6 +124,9 @@ header a:hover {
     height: 300px;
   }
 }
+#proyectos {
+  padding-bottom: 12rem;
+}
 #proyectos .proyectos {
   display: flex;
   align-items: center;
