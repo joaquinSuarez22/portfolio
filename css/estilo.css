@@ -205,6 +205,11 @@ header a:hover {
   text-align: center;
 }
 
+@media screen and (max-width: 1500px) {
+  #aboutme {
+    margin-top: 70rem;
+  }
+}
 @media screen and (max-width: 360px) {
   #aboutme {
     margin-top: 14rem;
@@ -312,7 +317,6 @@ header a:hover {
 }
 @media screen and (max-width: 360px) {
   #conocimientos .logos .logos__devtools .devtools__titulo h6 {
-    display: block;
     font-size: 1.2rem;
   }
   #conocimientos .logos .logos__devtools .logos__icons {
@@ -326,6 +330,13 @@ header a:hover {
   }
 }
 
+@media screen and (max-width: 360px) {
+  .logos__i {
+    padding: 4rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+}
 .formulario {
   height: 100vh;
   display: flex;
