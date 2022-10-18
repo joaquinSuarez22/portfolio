@@ -435,7 +435,7 @@ header .nav-link {
 }
 @media screen and (max-width: 360px) {
   .formulario {
-    padding-top: 105rem;
+    padding-top: 120rem;
   }
 }
 .formulario .form__ {
