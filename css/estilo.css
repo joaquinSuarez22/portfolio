@@ -73,6 +73,9 @@ header {
 header a:hover {
   border-bottom: solid #00b4d8;
 }
+header .nav-link {
+  text-align: center;
+}
 
 .hero {
   display: flex;
@@ -122,6 +125,14 @@ header a:hover {
   }
   .hero__img img {
     height: 300px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .hero .hero__titulo h1 {
+    font-size: 3rem;
+  }
+  .hero img {
+    width: 350px;
   }
 }
 #proyectos {
@@ -180,15 +191,49 @@ header a:hover {
   height: 400px;
   background-color: #90e0ef;
 }
+@media screen and (max-width: 740px) {
+  #proyectos .proyectos .proyectos__img img {
+    height: 280px;
+  }
+  #proyectos .proyectos .proyectos__img #aboutme {
+    margin-top: 25rem !important;
+  }
+}
+@media screen and (max-width: 510px) {
+  #proyectos .proyectos .proyectos__img img {
+    height: 220px;
+  }
+}
 @media screen and (max-width: 360px) {
   #proyectos .proyectos .proyectos__img img {
-    height: 200px;
+    height: 200px !important;
   }
 }
 #proyectos .proyectos .proyectos__img img:hover {
   transform: scale(1.1);
 }
+@media screen and (max-width: 360px) {
+  #proyectos .proyectos .proyectos__img h6 {
+    font-size: 1.2rem !important;
+  }
+}
 
+@media screen and (max-width: 530px) {
+  #proyectos .proyectos .proyectos__titulo h2 {
+    font-size: 2rem;
+  }
+  #proyectos .proyectos .proyectos__img h6 {
+    font-size: 25px;
+  }
+  #aboutme {
+    margin-top: 20rem !important;
+  }
+}
+@media screen and (max-width: 510px) {
+  #proyectos .proyectos .proyectos__img img {
+    height: 220px;
+  }
+}
 #aboutme {
   margin-top: 20rem;
   margin-bottom: 15rem;
@@ -208,12 +253,17 @@ header a:hover {
   text-align: center;
 }
 
-@media only screen and (max-width: 1500px) {
+@media screen and (max-width: 1500px) {
   #aboutme {
     margin-top: 70rem;
   }
 }
-@media only screen and (max-width: 360px) {
+@media screen and (max-width: 460px) {
+  #aboutme .aboutme__titulo h3 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 400px) {
   #aboutme {
     margin-top: 14rem;
     margin-bottom: 5rem;
@@ -338,6 +388,33 @@ header a:hover {
     padding: 4rem;
     padding-top: 0rem;
     padding-bottom: 0rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #conocimientos .logos .logos__Knowledge {
+    width: auto;
+  }
+  #conocimientos .logos .logos__devtools {
+    width: auto;
+  }
+}
+@media screen and (max-width: 620px) {
+  #conocimientos .conocimientos__titulo h4 {
+    font-size: 2rem;
+  }
+  #conocimientos .logos .logos__Knowledge .Knowledge__titulo h6 {
+    font-size: 1.2rem;
+  }
+  .logos__i {
+    font-size: 5rem !important;
+  }
+  #conocimientos .logos .logos__devtools .devtools__titulo h6 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .logos__i {
+    font-size: 10rem !important;
   }
 }
 .formulario {

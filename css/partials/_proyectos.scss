@@ -56,9 +56,27 @@
         background-color: $color2;
       }
 
+      @media screen and (max-width: 740px) {
+        img {
+          height: 280px;
+        }
+
+        #aboutme {
+          margin-top: 25rem !important;
+        }
+      }
+
+      @media screen and (max-width: 510px) {
+        img{
+          height: 220px;
+        }
+      
+      }
+
+
       @media screen and (max-width: 360px) {
         img {
-          height: 200px;
+          height: 200px !important;
         }
       }
 
@@ -67,4 +85,39 @@
       }
     }
   }
+
+  @media screen and (max-width: 360px) {
+    .proyectos .proyectos__img h6{
+      font-size: 1.2rem !important;
+    }
+  }
+
+}
+
+
+
+@media screen and (max-width: 530px) {
+
+  #proyectos .proyectos .proyectos__titulo h2{
+    font-size: 2rem;
+  }
+
+  #proyectos .proyectos .proyectos__img h6{
+    font-size: 25px;
+  }
+
+  #aboutme{
+margin-top: 20rem !important;
+  }
+
+}
+
+
+@media screen and (max-width: 510px) {
+
+  #proyectos .proyectos .proyectos__img img{
+
+    height: 220px;
+  }
+
 }

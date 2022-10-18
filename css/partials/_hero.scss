@@ -62,5 +62,19 @@
       height: 300px;
     }
   }
+
 }
 
+@media screen and (max-width: 590px) {
+
+    .hero .hero__titulo h1{
+      font-size: 3rem;
+    }
+
+.hero{
+  img{
+    width: 350px;
+  }
+}
+
+  }

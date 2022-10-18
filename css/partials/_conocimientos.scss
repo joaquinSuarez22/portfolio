@@ -114,8 +114,6 @@
           flex-direction: column;
         }
       }
-
-    
     }
 
     @media screen and (max-width: 360px) {
@@ -127,11 +125,48 @@
 }
 
 @media screen and (max-width: 360px) {
-
   .logos__i {
     padding: 4rem;
     padding-top: 0rem;
     padding-bottom: 0rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #conocimientos .logos .logos__Knowledge {
+    width: auto;
+  }
+
+  #conocimientos .logos .logos__devtools {
+    width: auto;
+  }
+}
+
+
+@media screen and (max-width: 620px) {
+
+  #conocimientos .conocimientos__titulo h4 {
+    font-size: 2rem;
+  }
+
+  #conocimientos .logos .logos__Knowledge .Knowledge__titulo h6{
+
+    font-size: 1.2rem;
+  }
+
+  .logos__i{
+    font-size: 5rem !important;
+  }
+
+  #conocimientos .logos .logos__devtools .devtools__titulo h6{
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+
+  .logos__i{
+    font-size: 10rem !important;
   }
 
 }
